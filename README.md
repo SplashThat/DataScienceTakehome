@@ -1,35 +1,19 @@
-Howto activate Jupyter Notebook:
+# Splash Data Science Exercises
 
+## Setup
 
-sh> sudo pip install virtualenv
+Before anything else, clone this repository to your local computer.
 
-sh> sudo pip install virtualenvwrapper
+1. First, make sure you have Python and pip installed.
+2. Install virtualenv: `sudo pip install virtualenv virtualenvwrapper`
+3. Create a local virtual env: `virtualenv venv`
+4. Activate the virtual env: `source venv/bin/activate`
+5. Install requirements: `pip install -r requirements.txt`
 
+## Run the Exercises
 
-sh> cd ~/Workspace/splashthat
+From the root folder of this repository, run `jupyter notebook`. This should open a browser up for you, but if not, just go to http://localhost:8888.
 
-sh> git clone git@github.com:SplashThat/DataScienceTests.git
+## Tear down
 
-sh> cd DataScienceTests
-
-
-sh> virtualenv venv
-
-sh> cd venv
-
-sh> source bin/activate
-
-(venv) sh> pip install jupyter
-
-
-(venv) sh> cd ../interviews2017
-
-(venv) sh> jupyter notebook
-
-
-Opens browser on http://localhost:8888
-
-
-(Once you're done:)
-
-(venv) sh> deactivate
+When you're done, just do `deactivate`
